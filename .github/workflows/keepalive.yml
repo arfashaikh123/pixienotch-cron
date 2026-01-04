@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Ping Supabase with Auth
         run: |
-          curl -X GET "$SUPABASE_URL/rest/v1/" \
+          curl -X GET "$SUPABASE_URL/rest/v1/carousel_images" \
             -H "apikey: $SUPABASE_ANON_KEY" \
             -H "Authorization: Bearer $SUPABASE_ANON_KEY"
         env:
